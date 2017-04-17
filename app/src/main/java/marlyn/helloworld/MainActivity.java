@@ -9,8 +9,6 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                builder.setTitle("Info");
-                builder.setMessage("Do you want to logout ??");
-                builder.setPositiveButton("Yes. Take me away!", new DialogInterface.OnClickListener() {
+                builder.setTitle("Exit");
+                builder.setMessage("Do you want to exit ??");
+                builder.setPositiveButton("Yes. Exit now!", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
 
